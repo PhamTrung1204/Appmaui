@@ -7,26 +7,34 @@
             <!-- Header -->
             <ScrollView Orientation="Horizontal" Padding="5" HorizontalScrollBarVisibility="Never" Grid.Row="0">
                 <HorizontalStackLayout Spacing="10">
-                    <Button Text="Câu hỏi mới nhất" 
+                    <Button x:Name="btnNewest"
+                            Text="Câu hỏi mới nhất" 
                             BackgroundColor="#2F80ED" 
                             TextColor="White" 
                             FontSize="14"
-                            CornerRadius="20"/>
-                    <Button Text="Theo dõi" 
+                            CornerRadius="20"
+                            Clicked="OnTabButtonClicked"/>
+                    <Button x:Name="btnFollow"
+                            Text="Theo dõi" 
                             BackgroundColor="#E0E0E0" 
                             TextColor="Black" 
                             FontSize="14"
-                            CornerRadius="20"/>
-                    <Button Text="Tôi hỏi" 
+                            CornerRadius="20"
+                            Clicked="OnTabButtonClicked"/>
+                    <Button x:Name="btnMyQuestions"
+                            Text="Tôi hỏi" 
                             BackgroundColor="#E0E0E0" 
                             TextColor="Black" 
                             FontSize="14"
-                            CornerRadius="20"/>
-                    <Button Text="Thành viên tích cực" 
+                            CornerRadius="20"
+                            Clicked="OnTabButtonClicked"/>
+                    <Button x:Name="btnActiveMembers"
+                            Text="Thành viên tích cực" 
                             BackgroundColor="#E0E0E0" 
                             TextColor="Black" 
                             FontSize="14"
-                            CornerRadius="20"/>
+                            CornerRadius="20"
+                            Clicked="OnTabButtonClicked"/>
                 </HorizontalStackLayout>
             </ScrollView>
 
